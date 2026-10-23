@@ -1,3 +1,5 @@
+exec: run clean
+
 run: seq
 	./run
 
