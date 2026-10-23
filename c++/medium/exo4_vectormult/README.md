@@ -13,5 +13,20 @@ Exemple de lancement avec un argument :
 ```
 
 Quelle est la complexité de votre algorithme ? Les temps mesurés sont-ils cohérents avec cette complexité ?
+- Première version O(3N), deuxième : O(N)
+- A peu près. Les 
 
 Attention au type de la variable qui contient le résultat : quelle est la valeur maximale qu’elle peut atteindre ?
+- Il faut que la variable qui contient le résultat soit un Int64 (`long int`)
+
+Performance première version avec tableaux :
+- 1M: 15 ms
+- 10M: segfault // 
+
+Performance deuxième version qui ajoute directement dans la variable :
+- 1M: 914ms - 0.9 s
+- 10M: 4500ms - 4.5 s
+- 50M: 18'582 ms - 18.6 s
+- 100M: 36'002 ms - 36 s
+
+Pour info, la deuxième version contient aussi tout le calcul des valeurs aléatoires, ce qui peut être la cause du temps que ça prend en plus.
