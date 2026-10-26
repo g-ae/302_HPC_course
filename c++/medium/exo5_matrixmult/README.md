@@ -15,3 +15,10 @@ Exemple de lancement :
 ```
 
 Quelle est la complexité de votre algorithme ? Les temps mesurés sont-ils cohérents avec cette complexité ?
+
+Performance:
+- 500: 1.7 s
+- 1000: 7.8 s
+- 2000: 78 s
+
+Complexité : O(N³) -> naïf

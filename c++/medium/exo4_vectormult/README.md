@@ -30,3 +30,9 @@ Performance deuxième version qui ajoute directement dans la variable :
 - 100M: 36'002 ms - 36 s
 
 Pour info, la deuxième version contient aussi tout le calcul des valeurs aléatoires, ce qui peut être la cause du temps que ça prend en plus.
+
+Refait programme en utilisant des `vector<int>`, performance :
+- 1M: 42ms
+- 10M: 223ms
+- 50M: 796ms
+- 100M: 1670 ms
