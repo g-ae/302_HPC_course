@@ -38,7 +38,7 @@ int main(int argc, char* argv[]) {
         for (int j = 0; j < array_size; j++) {
             int local_result = 0;
             for (int k = 0; k < array_size; k++) {
-                local_result += mat1[i * array_size + j + k] * mat2[(i + k) * array_size + j];
+                local_result += mat1[i * array_size + k] * mat2[k * array_size + j];
             }
             result[i * array_size + j] = local_result;
         }
