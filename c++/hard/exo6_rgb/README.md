@@ -13,3 +13,5 @@ Votre objectif est d’écrire un programme en C++ qui lit ces fichiers et calcu
 Avant de traiter les données, le programme doit vérifier que chaque fichier s’ouvre correctement. Si un fichier ne peut pas être ouvert, le programme doit afficher un message d’erreur avec **cerr**, ignorer ce fichier et continuer avec les suivants.
 
 Enfin, mesurez le temps total d’exécution du programme avec la bibliothèque **chrono** et affichez-le en millisecondes.
+
+- Exécution du programme total en 5 ms.
