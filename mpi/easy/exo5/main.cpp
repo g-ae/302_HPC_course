@@ -45,6 +45,8 @@ int main(int argc, char* argv[]) {
     MPI_Bcast(buffer, len, MPI_CHAR, root_rank, MPI_COMM_WORLD);
     cout << "Processor " << rank << " received: " << string(buffer) << endl;
 
+    delete[] buffer;
+
     MPI_Finalize();
     return 0;
 }

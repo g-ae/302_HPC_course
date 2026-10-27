@@ -22,6 +22,15 @@ Pour mesurer le temps, utilisez **MPI_Wtime**, qui renvoie le temps écoulé en 
 - le temps d’une exécution parallèle est celui du processus le plus lent : récupérez le maximum des temps de tous les processus sur le processus 0 avec **MPI_Reduce** et l’opération **MPI_MAX** ;
 - répétez la mesure plusieurs fois (par exemple 10) et gardez la médiane.
 
+Performances avec array_size=1'073'741'824 (32⁶):
+- baseline (1 proc): 3318ms
+- strong:
+    - 2: 1562ms
+    - 4: 761ms
+    - 8: 389ms
+    - 16: 227ms
+
+
 ## Questions
 
 1. Le speedup en strong scaling est-il proche de l’idéal ? À partir de combien de processus l’efficacité chute-t-elle nettement ?
