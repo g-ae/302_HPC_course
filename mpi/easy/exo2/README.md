@@ -19,3 +19,5 @@ Processor 5 - Hello World
 ## Question
 
 Lancez votre programme plusieurs fois. Est-ce que **MPI_Barrier** permet dans tous les cas d’afficher les messages dans l’ordre ? Pourquoi ?
+- Arrivé dans le premier exercice, le nombre de processeurs s'est affiché en plein milieu du reste des messages. MPI_Barrier ne permet pas d'afficher tout dans l'ordre dans TOUS les cas.
+- Chaque noeud MPI a son propre `stdout`, ensuite MPI les synchronise tous avec celui du hôte. Vu que c'est des opérations tellement rapides, ça peut arriver qu'une fraction de seconde sépare plusieurs messages, ce qui nous sort un affichage incorrect. Ce n'est que purement visuel, le fonctionnel est là.

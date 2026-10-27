@@ -19,3 +19,5 @@ Processor 5 - Hello World
 ## Question
 
 Lancez votre programme plusieurs fois. L’ordre d’affichage est-il maintenant garanti ? Comparez avec l’exercice 2.
+
+- Je pense qu'on est dans le même état que l'exercice 2, où le problème c'est la synchronisation des `stdout`. Mais pour le peu de tests effectués, aucun problème n'a été aperçu.
